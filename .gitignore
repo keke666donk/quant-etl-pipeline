@@ -1,0 +1,12 @@
+# 含 token / 个人配置，切勿提交
+/config.py
+
+# 本地行情缓存（真实数据拉取后落盘，便于复用、避免反复触发限流）
+/.cache/
+
+# Python
+__pycache__/
+*.pyc
+.venv/
+*.db
+.venv/
