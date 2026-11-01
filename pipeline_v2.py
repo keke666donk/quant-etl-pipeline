@@ -19,7 +19,8 @@ if not inspector.has_table("daily_price"):
         high REAL,
         low REAL,
         close REAL,
-        vol REAL
+        vol INTEGER,
+        PRIMARY KEY(ts_code,trade_date)
         )
         """))
     print("数据表创建成功")
