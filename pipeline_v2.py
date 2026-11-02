@@ -12,7 +12,7 @@ inspector=inspect(engine)
 if not inspector.has_table("daily_price"):
     with engine.begin() as conn:
         conn.execute(text("""
-        CREATE TABLE daily_price(
+        CREATE TABLE IF NOT EXISTS daily_price(
         ts_code TEXT,
         trade_date TEXT,
         open REAL,
